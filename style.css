@@ -1,0 +1,36 @@
+body {
+    margin: 0;
+    background-image: linear-gradient(rgb(221, 81, 81), rgb(169, 46, 46));
+    width: auto;
+    height: auto;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+
+#title {
+    font-family: arial;
+    cursor: default;
+    color: white;
+    text-align: center;
+    font-size: clamp(1em, 4.5em, 7em);
+    text-shadow: rgb(196, 196, 196) 3px 3px 0,
+                 rgb(123, 123, 123) 5px 5px 0;
+}
+
+#nameContainer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: clamp(.5em, 3em, 5em);
+}
+
+#childContainer {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+@media (max-width: 600px){
+    #nameContainer{flex-direction: column;}
+}
