@@ -14,11 +14,20 @@ for(i = 0; i < 3; i++){
 }
 
 let textOne = document.querySelector('#nameContainer div:nth-child(1) p.commonText');
-    textOne.addEventListener('click', () => {textOne.innerText = arrayOne[`${randomNum}`];})
+    textOne.addEventListener('click', () => {
+        textOne.innerText = arrayOne[`${randomNum}`];
+        randomNum = Math.floor(Math.random() * 5);
+    });
 let textTwo = document.querySelector('#nameContainer div:nth-child(2) p.commonText');
-    textTwo.addEventListener('click', () => {textTwo.innerText = arrayTwo[`${randomNum}`];})
+    textTwo.addEventListener('click', () => {
+        textTwo.innerText = arrayTwo[`${randomNum}`];
+        randomNum = Math.floor(Math.random() * 5);
+    });
 let textThree = document.querySelector('#nameContainer div:nth-child(3) p.commonText');
-    textThree.addEventListener('click', () => {textThree.innerText = arrayThree[`${randomNum}`];})
+    textThree.addEventListener('click', () => {
+        textThree.innerText = arrayThree[`${randomNum}`];
+        randomNum = Math.floor(Math.random() * 5);
+    });
 
 let arrayOne = ['mr.', 'the', 'dr.', 'king', 'mrs.'];
 let arrayTwo = ['giant', 'smelly', 'cool', 'tiny', 'loud'];
