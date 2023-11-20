@@ -1,5 +1,8 @@
 body {
     margin: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
     background-image: linear-gradient(rgb(221, 81, 81), rgb(169, 46, 46));
     width: auto;
     height: auto;
@@ -29,7 +32,7 @@ main {
     display: flex;
     justify-content: center;
     align-items: center;
-    gap: clamp(.5em, 3em, 5em);
+    gap: clamp(.5em, 2em, 4em);
 }
 
 #childContainer {
@@ -44,12 +47,15 @@ main {
     font-weight: bold;
     font-size: clamp(.5em, 4em, 7vw);
     max-width: 7em;
+    text-align: center;
+    min-width: 5em;
     word-break: break-all;
     cursor: pointer;
     padding-bottom: .2em;
     transition: .2s;
     border-bottom: rgba(255, 255, 255, 0) solid 3px;
     text-shadow: rgba(0, 0, 0, 0.813) 2px 2px 0;
+    text-transform: capitalize;
 }
 
 .commonText:hover {
@@ -57,7 +63,23 @@ main {
 }
 
 button {
-    margin: .3em;
+    font-size: clamp(.5em, 6vw, 2em);
+    cursor: pointer;
+    padding: .2em .6em;
+    margin-top: 1em;
+    color: white;
+    border-radius: 20px;
+    border: solid white 2px;
+    text-shadow: rgb(151, 151, 151) 1px 1px 0;
+    font-weight: bold;
+    background-color: rgba(0, 0, 0, 0.445);
+    transition: .2s;
+}
+
+button:hover {
+    color: rgb(150, 255, 150);
+    text-shadow: rgb(55, 142, 55) 1px 1px 0;
+    border: solid rgb(150, 255, 150) 2px;
 }
 
 @media (max-width: 600px){
