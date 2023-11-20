@@ -5,14 +5,13 @@ container.appendChild(nameContainer);
 
 for(i = 0; i < 3; i++){
     let childContainer = document.createElement('div');
-    let nameInput = document.createElement('input');
     let nameText = document.createElement('p');
-    let nameBtn = document.createElement('button');
     childContainer.id = 'childContainer';
     nameText.innerText = 'poopydoopy'
-    nameBtn.innerText = 'Enter';
     nameContainer.appendChild(childContainer);
-    childContainer.appendChild(nameInput);
-    childContainer.appendChild(nameText);
-    childContainer.appendChild(nameBtn);
+    childContainer.appendChild(nameText).classList.add('commonText');
 }
+
+let textOne = document.querySelector('#nameContainer div:nth-child(1) p.commonText');
+let textTwo = document.querySelector('#nameContainer div:nth-child(2) p.commonText');
+let textThree = document.querySelector('#nameContainer div:nth-child(3) p.commonText');
