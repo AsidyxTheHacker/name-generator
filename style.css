@@ -19,9 +19,9 @@ main {
     cursor: default;
     color: white;
     text-align: center;
-    font-size: clamp(1em, 4em, 7em);
-    text-shadow: rgb(196, 196, 196) 3px 3px 0,
-                 rgb(123, 123, 123) 5px 5px 0;
+    font-size: clamp(.5em, 4em, 6em);
+    text-shadow: rgb(183, 183, 183) 3px 3px 0,
+                 rgb(112, 112, 112) 5px 5px 0;
     border-bottom: white solid 3px;
 }
 
@@ -42,7 +42,7 @@ main {
 
 .commonText {
     font-weight: bold;
-    font-size: clamp(.5em, 3em, 6vw);
+    font-size: clamp(.5em, 4em, 7vw);
     max-width: 7em;
     word-break: break-all;
     cursor: pointer;
