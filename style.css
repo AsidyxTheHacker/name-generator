@@ -5,16 +5,24 @@ body {
     height: auto;
     background-repeat: no-repeat;
     background-attachment: fixed;
+    font-family: arial;
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
 
 #title {
-    font-family: arial;
     cursor: default;
     color: white;
     text-align: center;
-    font-size: clamp(1em, 4.5em, 7em);
+    font-size: clamp(1em, 4em, 7em);
     text-shadow: rgb(196, 196, 196) 3px 3px 0,
                  rgb(123, 123, 123) 5px 5px 0;
+    border-bottom: white solid 3px;
 }
 
 #nameContainer {
@@ -29,8 +37,31 @@ body {
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    color: white;
+}
+
+.commonText {
+    font-weight: bold;
+    font-size: clamp(.5em, 3em, 6vw);
+    max-width: 7em;
+    word-break: break-all;
+    cursor: pointer;
+    padding-bottom: .2em;
+    transition: .2s;
+    border-bottom: rgba(255, 255, 255, 0) solid 3px;
+    text-shadow: rgba(0, 0, 0, 0.813) 2px 2px 0;
+}
+
+.commonText:hover {
+    border-bottom: white solid 3px;
+}
+
+button {
+    margin: .3em;
 }
 
 @media (max-width: 600px){
-    #nameContainer{flex-direction: column;}
+    #nameContainer{flex-direction: column; margin-top: 2em}
+    #title{border-bottom: none; margin:.3em}
+    .commonText{margin:0; font-size: 2em;}
 }
