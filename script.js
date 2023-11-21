@@ -1,4 +1,4 @@
-let currentNum = 12;
+let currentNum = 15;
 let randomNum = Math.floor(Math.random() * currentNum);
 let container = document.getElementById('container');
 let nameContainer = document.createElement('div');
@@ -21,7 +21,7 @@ let textOne = document.querySelector('#nameContainer div:nth-child(1) p.commonTe
     });
 let textTwo = document.querySelector('#nameContainer div:nth-child(2) p.commonText');
     textTwo.addEventListener('click', () => {
-        textTwo.innerText = arrayTwo[`${randomNum}`];
+        textTwo.innerText = arrayTwo[`${randomNum + 1}`];
         randomNum = Math.floor(Math.random() * currentNum);
     });
 let textThree = document.querySelector('#nameContainer div:nth-child(3) p.commonText');
@@ -39,6 +39,6 @@ genBtn.addEventListener('click', () => {
     textThree.innerText = arrayThree[`${randomNum}`];
 })
 
-let arrayOne = ['mr.', 'the', 'dr.', 'king', 'mrs.', 'inspector', 'sir.', 'brotha', 'sista', 'uncle', 'mama', 'lil'];
-let arrayTwo = ['giant', 'smelly', 'cool', 'tiny', 'loud', 'blue', 'nice', 'wild', 'weird', 'jive', 'asian', 'creepy'];
-let arrayThree = ['potato', 'clown', 'cat', 'squid', 'boy', 'man', 'balls', 'guy', 'turkey', 'dude', 'pants', 'mouth'];
+let arrayOne = ['mr.', 'elder', 'dr.', 'king', 'mrs.', 'inspector', 'sir.', 'brotha', 'sista', 'uncle', 'mama', 'lil', 'lord', 'rabbi', 'super'];
+let arrayTwo = ['giant', 'smelly', 'cool', 'tiny', 'loud', 'blue', 'nice', 'wild', 'weird', 'jive', 'asian', 'creepy', 'gay', 'mad', 'freaky', 'fat'];
+let arrayThree = ['mango', 'clown', 'cat', 'squid', 'boy', 'snake', 'balls', 'guy', 'turkey', 'burger', 'pants', 'mouth', 'knees', 'beard', 'baby'];
